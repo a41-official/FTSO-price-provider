@@ -463,7 +463,7 @@ class DataProvider {
             this.voterWhitelisterContract = await getWeb3Contract(this.web3, voterWhitelisterAddress, "VoterWhitelister");
 
             // if file .whitelisted does not exists then enable whitelisting
-            if (!fs.existsSync(".whitelisted")) {
+            if (!fs.existsSync("/data/.whitelisted")) {
                 conf.whitelist = true;
                 this.logger.info(`whitelisting enabled`);
             }
@@ -500,7 +500,7 @@ class DataProvider {
 
                 if (conf.whitelist) {
                     // if whitelisting was done then create .whitelisted file
-                    fs.writeFileSync(".whitelisted", "done");
+                    fs.writeFileSync("/data/.whitelisted", "done");
                     this.logger.info(`whitelisting completed`);
                 }
             } catch (err: any) {
