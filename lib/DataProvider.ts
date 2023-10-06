@@ -403,7 +403,11 @@ class DataProvider {
 
         if (process.env.PROJECT_SECRET === undefined) {
             this.logger.info(`   * account read from .env`)
-            accountPrivateKey = (conf.accountPrivateKey as string)
+            if(conf.accountPrivateKey) {
+                accountPrivateKey = (conf.accountPrivateKey as string)
+            } else {
+                accountPrivateKey = (process.env.PRIVATE_KEY as string)
+            }
         } else if (process.env.PROJECT_SECRET !== undefined) {
             this.logger.info(`   * account read from secret '${process.env.PROJECT_SECRET}'`)
             accountPrivateKey = (await fetchSecret(process.env.PROJECT_SECRET as string) as string)
