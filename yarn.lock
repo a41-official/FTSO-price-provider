@@ -463,6 +463,11 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
+"@stomp/stompjs@^6.1.2":
+  version "6.1.2"
+  resolved "https://registry.yarnpkg.com/@stomp/stompjs/-/stompjs-6.1.2.tgz#4ac3c380e8d1de1da94a3623d404e67de69dd01e"
+  integrity sha512-FHDTrIFM5Ospi4L3Xhj6v2+NzCVAeNDcBe95YjUWhWiRMrBF6uN3I7AUOlRgT6jU/2WQvvYK8ZaIxFfxFp+uHQ==
+
 "@szmarczak/http-timer@^1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@szmarczak/http-timer/-/http-timer-1.1.2.tgz#b1665e2c461a2cd92f4c1bbf50d5454de0d4b421"
@@ -931,16 +936,18 @@ ccxt@2.8.47:
   dependencies:
     ws "^8.8.1"
 
-"ccxws@git+https://github.com/flare-foundation/ccxws.git#0.43.29":
-  version "0.43.29"
-  resolved "git+https://github.com/flare-foundation/ccxws.git#1796edb44b7e423cd1d010bf3221947b6df77030"
+"ccxws@git+https://github.com/flare-foundation/ccxws.git#0.43.58":
+  version "0.43.58"
+  resolved "git+https://github.com/flare-foundation/ccxws.git#4bf763786772ca272a78dbe042d551a8845f5c73"
   dependencies:
+    "@stomp/stompjs" "^6.1.2"
     crc "^3.8.0"
     decimal.js "^10.2.0"
     moment "^2.26.0"
     moment-timezone "^0.5.34"
     pusher-js "^4.4.0"
     semaphore "^1.1.0"
+    websocket "^1.0.34"
     ws "^7.3.0"
 
 chownr@^1.1.1:
@@ -4031,7 +4038,7 @@ websocket-extensions@>=0.1.1:
   resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.4.tgz#7f8473bc839dfd87608adb95d7eb075211578a42"
   integrity sha512-OqedPIGOfsDlo31UNwYbCFMSaO9m9G/0faIHj5/dZFDMFqPTcx6UwqyOy3COEaEOg/9VsGIpdqn62W5KhoKSpg==
 
-websocket@^1.0.32:
+websocket@^1.0.32, websocket@^1.0.34:
   version "1.0.34"
   resolved "https://registry.yarnpkg.com/websocket/-/websocket-1.0.34.tgz#2bdc2602c08bf2c82253b730655c0ef7dcab3111"
   integrity sha512-PRDso2sGwF6kM75QykIesBijKSVceR6jL2G8NGYyq2XrItNC2P5/qL5XeR056GhA+Ly7JMFvJb9I312mJfmqnQ==
