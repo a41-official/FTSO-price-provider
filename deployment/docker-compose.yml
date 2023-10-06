@@ -1,0 +1,12 @@
+version: '3.6'
+
+services:
+
+  flare-price-provider:
+    image: flarenetwork/flare-price-provider:latest
+    restart: always
+    env_file: .deploy.env
+    volumes:
+      - ./data:/data
+    ports:
+      - 3000:3000

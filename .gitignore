@@ -35,3 +35,7 @@ yarn-error.log
 
 ## Config in root
 *config.json
+
+## Deployment
+deployment/.deploy.env
+deployment/data
