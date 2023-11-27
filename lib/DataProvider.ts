@@ -14,6 +14,7 @@ import { IPriceProvider } from './IPriceProvider';
 import { PriceInfo } from './PriceInfo';
 import * as impl from './PriceProviderImpl';
 import { bigNumberToMillis, getContract, getLogger, getProvider, getWeb3, getWeb3Contract, getWeb3Wallet, priceHash, waitFinalize3Factory } from './utils';
+import { MetricServer } from './MetricServer';
 
 let ccxws: any = require('ccxws');
 let randomNumber = require("random-number-csprng");
@@ -528,3 +529,7 @@ class DataProvider {
 const dataProvider = new DataProvider(conf);
 
 dataProvider.runDataProvider();
+
+// Metrics Server
+const metricServer = new MetricServer();
+metricServer.start();
