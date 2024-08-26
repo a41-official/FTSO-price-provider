@@ -106,12 +106,6 @@
             "priceProviderParams": ["XLM/USD", 1.0, [["coinbasepro", "XLM/USD"], ["bitfinex", "XLM/USD"], ["bitstamp", "XLM/USD"], ["kraken", "XLM/USD"], ["binance", "XLM/USDT"], ["bitforex", "XLM/USDT"], ["digifinex", "XLM/USDT"], ["bitrue", "XLM/USDT"], ["huobi", "XLM/USDT"], ["gateio", "XLM/USDT"], ["okex", "XLM/USDT"], ["lbank", "XLM/USDT"]], "avg"]
         },
         {
-            "symbol": "XRP",
-            "decimals": 5,
-            "priceProviderClass": "WsLimitedPriceProvider",
-            "priceProviderParams": ["XRP/USD", 1.0, [["bitfinex", "XRP/USD"], ["bitmex", "XRP/USD"], ["bitstamp", "XRP/USD"], ["kraken", "XRP/USD"], ["binance", "XRP/USDT"], ["okex", "XRP/USDT"], ["bitrue", "XRP/USDT"], ["huobi", "XRP/USDT"], ["digifinex", "XRP/USDT"], ["bitforex", "XRP/USDT"], ["gateio", "XRP/USDT"], ["lbank", "XRP/USDT"]], "avg"]
-        },
-        {
             "symbol": "FLR",
             "decimals": 5,
             "priceProviderClass": "WsLimitedPriceProvider",
